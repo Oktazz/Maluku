@@ -5,6 +5,7 @@
 body{
     margin: 0 auto;
     padding: 0;
+    height: 160svh;
 }
 
 .nav{
@@ -28,8 +29,6 @@ body{
     text-align: center;
 }
 
-
-
 .grid-anggota{
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -37,10 +36,11 @@ body{
     gap: 20px;
 }
 
-.foto{
+.foto, .peristiwa{
     background-color: antiquewhite;
     text-align: center;
     padding: 10px;
+    border-radius: 5px;
     border: 1px solid grey;
 }
 
@@ -78,10 +78,42 @@ body{
     font-size: 19px;
 }
 
-.des-singkat{
+#des-singkat{
     background-color: #efefef;
     width: 610px;
-    padding: 0px 13px;
+    padding: 10px 13px;
     margin: 0 auto;
     text-align: justify;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#sejarah{
+    background-color: #efefef;
+    width: 610px;
+    padding: 10px 13px;
+    margin: 0 auto;
+    text-align: justify;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.peristiwa img{
+    width: 100px;
+}
+
+ .grid-peristiwa{
+    display: grid;
+    grid-template-columns:200px 200px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid-peristiwa{
+    display: grid;
+    grid-template-columns:260px 260px;
+    justify-content: center;
+    gap: 20px;
 }
