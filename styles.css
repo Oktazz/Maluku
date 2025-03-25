@@ -23,11 +23,20 @@ body{
     margin: 0 auto;
     position: relative;
     top: 100px;
+    width: 700px;
 }
 
 .container h2{
     text-align: center;
 }
+
+.block{
+    height: 100vh;
+    align-content: center;
+}
+
+
+
 
 .grid-anggota{
     display: grid;
@@ -36,7 +45,7 @@ body{
     gap: 20px;
 }
 
-.foto, .peristiwa{
+.foto, .peristiwa, .tokoh{
     background-color: antiquewhite;
     text-align: center;
     padding: 10px;
@@ -49,6 +58,8 @@ body{
 }
 
 .menu{
+    position: sticky;
+    top: 99px;
     background-color: #efefef;
     padding: 10px 0;
     margin-top: 20px;
@@ -56,6 +67,7 @@ body{
     justify-items: center;
     height: 50px;
     margin-bottom: 20px;
+    z-index: 1000
 }
 
 .menu ul{
@@ -78,7 +90,7 @@ body{
     font-size: 19px;
 }
 
-#des-singkat{
+#des-singkat, #sejarah, #tokoh-penting, #fakta-menarik{
     background-color: #efefef;
     width: 610px;
     padding: 10px 13px;
@@ -87,33 +99,29 @@ body{
     border: 1px solid grey;
     border-radius: 5px;
     margin-bottom: 20px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ; 
 }
 
-#sejarah{
-    background-color: #efefef;
-    width: 610px;
-    padding: 10px 13px;
-    margin: 0 auto;
-    text-align: justify;
-    border: 1px solid grey;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.peristiwa img{
+.peristiwa img, .tokoh img{
     width: 100px;
 }
 
- .grid-peristiwa{
-    display: grid;
-    grid-template-columns:200px 200px;
-    justify-content: center;
-    gap: 20px;
-}
-
-.grid-peristiwa{
+.grid-peristiwa, .grid-tokoh{
     display: grid;
     grid-template-columns:260px 260px;
     justify-content: center;
     gap: 20px;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
