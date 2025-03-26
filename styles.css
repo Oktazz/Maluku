@@ -97,6 +97,9 @@ body{
 #des-singkat{
     display: flex;
     align-items: center;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
 }
 
 #des-singkat img{
@@ -104,22 +107,32 @@ body{
     height: 256px;
     margin-right: 20px;
     border-radius: 5px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
 }
 
-#des-singkat p{
+.text{
     text-align: justify;
+    align-content: center;
     background-color:#9fd3c7;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid grey;
-    height: 246px;
+    min-height: 246px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
 }
 
-#sejarah{
+#sejarah, #tokoh-penting, #fakta-menarik{
     background-color: #9fd3c7;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid grey;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
 }
 
 .grid-peristiwa{
@@ -133,33 +146,49 @@ body{
     background-color: #9fd3c7;
     margin-bottom: 20px;
     margin-left: 100px;
+    margin-right: 100px;
 }
 .peristiwa p{
     text-align: justify;
     margin-top: 50px;
-
 }
 
-.tokoh {
-    
-    background-color: #9fd3c7;
-    border: 1px solid grey;
+.peristiwa img{
+    width: 50%;
     border-radius: 5px;
-    
-    gap: 20px; /* Tambahkan jarak antara gambar dan teks */
 }
 
-.tokoh img {
-    display: block; /* Ubah gambar menjadi elemen block */
-    margin: 0 auto; /* Memusatkan gambar secara horizontal */
-    width: 150px; /* Sesuaikan ukuran gambar */
-    height: auto; /* Pertahankan rasio gambar */
-    border-radius: 5px; /* Tambahkan border radius untuk tampilan lebih halus */
+.grid-tokoh{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    gap: 20px;
 }
 
-.tokoh p {
-    margin: 20px; /* Hilangkan margin default */
-    text-align: justify; /* Rata kiri-kanan untuk teks */
-    line-height: 1.5; /* Tambahkan jarak antar baris untuk keterbacaan */
-    font-size: 16px; /* Sesuaikan ukuran font */
+.tokoh img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.tokoh p{
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.tokoh{
+    background-color: #9fd3c7;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
