@@ -7,17 +7,22 @@ body{
     padding: 0;
     height: 160svh;
     width: 90%;
+    background-color: #142d4c;
 }
 
 .nav{
     position: fixed;
-    background-color: #efefef;
+    background-color: #385170;
     width: 90%;
     padding: 10px 0px;
     z-index: 1000;
     top: 0;
     text-align: center;
     margin-bottom: 10px ;
+    border-radius: 5px;
+}
+.nav h1{
+    color:#ececec;
 }
 
 .container{
@@ -28,6 +33,7 @@ body{
 
 .container h2{
     text-align: center;
+    color: #ececec;
 }
 
 .block{
@@ -43,7 +49,7 @@ body{
 }
 
 .foto{
-    background-color: antiquewhite;
+    background-color: #9fd3c7;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
@@ -57,13 +63,14 @@ body{
 .menu{
     position: sticky;
     top: 105px;
-    background-color: #efefef;
+    background-color: #385170;
     padding: 10px 0;
     margin-top: 20px;
     text-align: center;
     justify-items: center;
     height: 50px;
     margin-bottom: 20px;
+    border-radius: 5px;
     z-index: 1000
 }
 
@@ -75,15 +82,15 @@ body{
 
 .menu a{
     text-decoration: none;
-    color: black;
+    color: #ececec;
     padding-bottom: 2px;
     /* border-bottom: 1px solid gray ; */
     transition: all 0.4s;
 }
 
 .menu a:hover{
-    color: coral;
-    border-bottom: 1px solid coral;
+    color: black;
+    border-bottom: 1px solid black;
     font-size: 19px;
 }
 
@@ -101,7 +108,7 @@ body{
 
 #des-singkat p{
     text-align: justify;
-    background-color: antiquewhite;
+    background-color:#9fd3c7;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid grey;
@@ -109,7 +116,7 @@ body{
 }
 
 #sejarah{
-    background-color: antiquewhite;
+    background-color: #9fd3c7;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid grey;
@@ -120,4 +127,39 @@ body{
     grid-template-columns: 50% 50%;
     justify-content: center;
     gap: 20px;
+    
+}
+.peristiwa{
+    background-color: #9fd3c7;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+.peristiwa p{
+    text-align: justify;
+    margin-top: 50px;
+
+}
+
+.tokoh {
+    
+    background-color: #9fd3c7;
+    border: 1px solid grey;
+    border-radius: 5px;
+    
+    gap: 20px; /* Tambahkan jarak antara gambar dan teks */
+}
+
+.tokoh img {
+    display: block; /* Ubah gambar menjadi elemen block */
+    margin: 0 auto; /* Memusatkan gambar secara horizontal */
+    width: 150px; /* Sesuaikan ukuran gambar */
+    height: auto; /* Pertahankan rasio gambar */
+    border-radius: 5px; /* Tambahkan border radius untuk tampilan lebih halus */
+}
+
+.tokoh p {
+    margin: 20px; /* Hilangkan margin default */
+    text-align: justify; /* Rata kiri-kanan untuk teks */
+    line-height: 1.5; /* Tambahkan jarak antar baris untuk keterbacaan */
+    font-size: 16px; /* Sesuaikan ukuran font */
 }
