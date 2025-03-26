@@ -6,12 +6,13 @@ body{
     margin: 0 auto;
     padding: 0;
     height: 160svh;
+    width: 90%;
 }
 
 .nav{
     position: fixed;
     background-color: #efefef;
-    width: 100%;
+    width: 90%;
     padding: 10px 0px;
     z-index: 1000;
     top: 0;
@@ -23,7 +24,6 @@ body{
     margin: 0 auto;
     position: relative;
     top: 100px;
-    width: 700px;
 }
 
 .container h2{
@@ -35,9 +35,6 @@ body{
     align-content: center;
 }
 
-
-
-
 .grid-anggota{
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -45,7 +42,7 @@ body{
     gap: 20px;
 }
 
-.foto, .peristiwa, .tokoh{
+.foto{
     background-color: antiquewhite;
     text-align: center;
     padding: 10px;
@@ -59,7 +56,7 @@ body{
 
 .menu{
     position: sticky;
-    top: 99px;
+    top: 105px;
     background-color: #efefef;
     padding: 10px 0;
     margin-top: 20px;
@@ -90,38 +87,37 @@ body{
     font-size: 19px;
 }
 
-#des-singkat, #sejarah, #tokoh-penting, #fakta-menarik{
-    background-color: #efefef;
-    width: 610px;
-    padding: 10px 13px;
-    margin: 0 auto;
-    text-align: justify;
-    border: 1px solid grey;
+#des-singkat{
+    display: flex;
+    align-items: center;
+}
+
+#des-singkat img{
+    width: 350px;
+    height: 256px;
+    margin-right: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    animation: appear 5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20% ; 
 }
 
-.peristiwa img, .tokoh img{
-    width: 100px;
+#des-singkat p{
+    text-align: justify;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 246px;
 }
 
-.grid-peristiwa, .grid-tokoh{
+#sejarah{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.grid-peristiwa{
     display: grid;
-    grid-template-columns:260px 260px;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     gap: 20px;
-}
-
-@keyframes appear{
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
 }
