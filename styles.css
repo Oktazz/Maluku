@@ -29,7 +29,7 @@ body{
 .container{
     margin: 0 auto;
     position: relative;
-    top: 100px;
+    /* top: 100px; */
 }
 
 .container h2{
@@ -197,4 +197,41 @@ body{
         opacity: 1;
         scale: 1;
     }
+}
+
+@media screen and (max-width: 768px){
+   #des-singkat{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+
+    #des-singkat img{
+     width: 90%;
+     height: auto;
+     margin: 0 auto;
+     margin-bottom: 10px;
+    }
+
+   #des-singkat p{
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   #sejarah, #tokoh-penting, #fakta-menarik{
+    text-align: center;
+   }
+
+   #p{
+    text-align: justify;
+   }
+
+   .grid-peristiwa, .grid-tokoh{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 20px;
+   }
+
+   
 }
