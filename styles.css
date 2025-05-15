@@ -29,7 +29,7 @@ body{
 .container{
     margin: 0 auto;
     position: relative;
-    /* top: 100px; */
+    top: 50px;
 }
 
 .container h2{
@@ -80,14 +80,21 @@ body{
     display: flex;
     gap: 20px;
     list-style: none;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    padding: 0;
 }
 
 .menu a{
     text-decoration: none;
     color: #ececec;
     padding-bottom: 2px;
-    /* border-bottom: 1px solid gray ; */
+    border-bottom: 1px solid gray ;
     transition: all 0.4s;
+    margin: 0 auto;
+    display: block;
 }
 
 .menu a:hover{
@@ -199,38 +206,55 @@ body{
     }
 }
 
-@media screen and (max-width: 1080px){
-   #des-singkat{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@media only screen and (max-width: 1080px){
+   .nav h1{
+        font-size: 18px;
+   }
+   
+    .menu a{
+        font-size: 10px;
+}
+
+    .menu a:hover{
+        font-size: 12px;
+}
+
+    #des-singkat{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
    }
 
     #des-singkat img{
-     width: 90%;
-     height: auto;
-     margin: 0 auto;
-     margin-bottom: 10px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 
    #des-singkat p{
-    width: 90%;
-    margin: 0 auto;
+        width: 90%;
+        margin: 0 auto;
    }
 
    #sejarah, #tokoh-penting, #fakta-menarik{
-    text-align: center;
+        text-align: center;
    }
 
    #p{
-    text-align: justify;
+        text-align: justify;
    }
 
    .grid-peristiwa, .grid-tokoh{
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    gap: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        gap: 20px;
+   }
+
+   .peristiwa, .tokoh{
+        margin-left: 0px;
+        margin-right: 0px;
    }
 
    
